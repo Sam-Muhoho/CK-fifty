@@ -387,6 +387,33 @@ background:#c8a96a;
 margin:20px auto 40px auto;
 }
 
+.mobile-menu{
+display:none;
+flex-direction:column;
+background:white;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+padding:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+.mobile-menu a{
+padding:12px 0;
+text-decoration:none;
+color:#444;
+border-bottom:1px solid #eee;
+}
+.hero{
+min-height:80vh;
+padding:20px;
+}
+
+.hero-content{
+max-width:700px;
+margin:auto;
+}
 /* -----------------------
 Responsive
 ----------------------- */
@@ -407,6 +434,100 @@ font-size:40px;
 
 .section-title{
 font-size:36px;
+}
+
+}
+@media (max-width:1024px){
+.mobile-menu{
+    display: none;
+}
+.nav-container{
+padding:15px;
+}
+
+.hero-title{
+font-size:50px;
+}
+
+.week-overview,
+.services,
+.agenda{
+padding:30px;
+}
+
+.overview-grid{
+gap:20px;
+}
+
+}
+@media (max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.hero{
+height:auto;
+padding:60px 20px;
+}
+
+.hero-title{
+font-size:36px;
+}
+
+.hero-description{
+font-size:15px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+.overview-grid{
+grid-template-columns:1fr;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.week-overview,
+.services,
+.agenda{
+margin:80px auto;
+}
+
+.day-card{
+padding:25px 0;
+}
+
+.footer{
+font-size:18px;
+padding:30px;
+}
+
+}
+@media (max-width:480px){
+
+.hero-title{
+font-size:28px;
+}
+
+.hero-description{
+font-size:14px;
+}
+
+.hero-button{
+padding:12px 22px;
+font-size:13px;
+}
+
+.logo{
+font-size:18px;
 }
 
 }

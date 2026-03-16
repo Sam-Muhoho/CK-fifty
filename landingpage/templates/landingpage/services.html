@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <title>Services</title>
  {% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{% static 'landingpage/css/style.css' %}">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -13,8 +14,7 @@
 
 <nav class="navbar">
 <div class="nav-container">
-
-<a href="index.html" class="logo">CK@fifty</a>
+<a href="/" class="logo">CK@fifty</a>
 
 <ul class="nav-links">
 <li><a href="/">Welcome</a></li>
@@ -24,6 +24,12 @@
 
 <button id="menu-toggle" class="menu-toggle">☰</button>
 
+</div>
+
+<div id="mobile-menu" class="mobile-menu">
+<a href="/">Welcome</a>
+<a href="/agenda">Agenda</a>
+<a href="/services">Services</a>
 </div>
 </nav>
 
@@ -88,7 +94,6 @@ Everything you need for a seamless experience.
 <p>Live. Love. Inspire.</p>
 </footer>
 
-<script src="script.js"></script>
-
+<script src="{% static 'landingpage/js/script.js' %}"></script>
 </body>
 </html>
