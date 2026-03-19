@@ -9,6 +9,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
+<!-- RSVP Modal -->
+
+<div id="rsvp-modal" class="modal">
+
+<div class="modal-content">
+
+<span class="close-modal">&times;</span>
+
+<h2>RSVP Confirmation</h2>
+
+<p>Please confirm if you will be attending.</p>
+
+<form id="rsvp-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<select required>
+<option value="">Will you attend?</option>
+<option>Yes, I will be there</option>
+<option>I shall confirm later on</option>
+<option>Sorry, I cannot attend</option>
+</select>
+
+<button type="submit" class="hero-button">
+Confirm RSVP
+</button>
+
+</form>
+
+<p id="rsvp-success" class="success-message">
+Thank you! Your RSVP has been received.
+</p>
+
+</div>
+
+</div>
 <body>
 
 <nav class="navbar">
